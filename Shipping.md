@@ -1,5 +1,6 @@
-# Project Title
+# WP Notes: A Study of Financial Distress in the Shipping Industry
 A brief description of what your project does and why it exists.
+
 
 ## Table of Contents
 1. [Introduction](#introduction)
