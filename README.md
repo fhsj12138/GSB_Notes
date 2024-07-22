@@ -1,6 +1,5 @@
 # Title
-A brief description of what your project does and why it exists.
-
+MAKE SURE YOU COMMIT CHANGES BEFORE YOU REFRESH PAGE!!!
 
 ## Table of Contents
 1. [Introduction](#introduction)
