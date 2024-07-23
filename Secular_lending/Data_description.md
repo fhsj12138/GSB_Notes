@@ -1,16 +1,16 @@
 ## Yen folder
 aseru-banking/code/
 
-### hmda/regression
-#### hmda_regression
+### hmda_regressions
+#### hmda_annual
+- from raw to panel data
+- Note: 2018 variable change; 2008 after more complete data
+#### hmda_analysis 
 - ignore missing asset block
-hmda annual from raw to panel data 
-- 2018 variable change
-- 2008 after more complete data
 - want to argue the decline in securitisation rate, but data trend is not obvious, method?
-- lender identifier <-- respondent id: check lar_record
+- lender identifier <-- respondent id: check `lar_record`
 - group mortgage by bank
-- Avery dataset: to link bank identifier to HMDA, check hmdadoc2017.pdf
+- Avery dataset: to link bank identifier to HMDA, check `hmdadoc2017.pdf`
   - 2017 and before lumped together, afterwards, by year 
     - variable charter gives type of institution
 
@@ -31,4 +31,4 @@ hmda annual from raw to panel data
   - matching is restricted to same year, fine
   - call report: //data_collection_temp/balance_sheet/balancesheet panel
       - read debt security 
-## Replication Best Practice 
+ 
