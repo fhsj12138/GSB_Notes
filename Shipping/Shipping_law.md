@@ -29,5 +29,13 @@
 - CLC requires HNS claims to be brought in courts of the state in hich the incidence occured, where liability arises in respect of an incident
 - liability arises in incident with damage outside the territory of any state, action may be commenced in state where ship is registered, or if unrejistered, state of the flag of which the ship would be entitled to fly or ship owner's residence state or principal place of business
 - HNS fund: also to cover losses not recoverable when defendent financially incapable of paying
-### Pollution from oil rigs 
-- 
+### Environmental Liability Directive 2004/35/EC
+- EU-wide framework for remediatoin of environmental damage, implemented in england by the Environmental Damage (Prevention and Remediation) Regulations 2009
+- strict liability regime applies to operatros tht professionaly conduct risky activities, cover shipping activites
+- ambit of damage to surface water covers all EU waters including the exclusive economic zone nd continental shelf under member states jurisdiction
+### 2007 Nairobi International Convention on the removal of wrecks
+- shipowners are liable for the costs o locating, marking and removing the wreck unless exceptional circumstances of war etc.
+- allows shipowners to limit under applicable limitation regime
+- requires reistered owner of a ship above 300 gross tonnage to maintain insurance or other financial security such as a guatantee of a bank or similar institution to cover liability
+- amount should be equal to the limits of liability under the applicable national or international limitation regime but
+- ratified by 10 states 
