@@ -31,4 +31,6 @@ aseru-banking/code/
   - matching is restricted to same year, fine
   - call report: //data_collection_temp/balance_sheet/balancesheet panel
       - read debt security 
- 
+
+ ## Questions 
+ - where used hmda_year_needed
