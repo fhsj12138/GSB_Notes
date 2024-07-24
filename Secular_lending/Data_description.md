@@ -14,7 +14,12 @@ aseru-banking/code/
 - [Avery](https://sites.google.com/site/neilbhutta/data)
 - HMDA ID matched to FRB's NIC system, FFIEC or TFR Call Reports for each year , also matched to HUD's list of manufactured home and subprime lenders (1993-2005). and FFIEC's list of CRA wholesale and limited purpose institutions , check `hmdadoc2017.pdf`
 - 2017 and before lumped together, afterwards, by year 
-- variable charter gives type of institution
+- variable charter gives type of institution, excluded credit union as is non-bank
+- HMDA data prior to 2018, `respondent_id` is lender identifier -- macthed in Avery file under `hmprid`; Lenders rssdid variables under `ENTITYyy`
+- HMDA after 2018, `lei` is lender identifier -- matched in Avery file under `lei`; Lenders rssdid under RSSDyy
+- RSSD: Federal Reserve Board Entity number (RSSD9001) for the HMDA filer as
+provided by the FFIEC.
+  
 
 
 ### hmdacll
@@ -36,3 +41,9 @@ aseru-banking/code/
 
  ## Questions 
  - where used hmda_year_needed
+ - Avery file comes with XXXXyy, why redo `for (variable in c('NAME', 'ASSETS', 'CHARTR', 'RSSD')) {
+		variable_year <- paste0(variable, substr(year, 3, 4))`
+## Notes
+- good to test the data before manipulation
+  `colnames() table() 
+  
