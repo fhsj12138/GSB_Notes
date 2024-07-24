@@ -10,9 +10,11 @@ aseru-banking/code/
 - want to argue the decline in securitisation rate, but data trend is not obvious, method?
 - lender identifier <-- respondent id: check `lar_record`
 - group mortgage by bank
-- Avery dataset: to link bank identifier to HMDA, check `hmdadoc2017.pdf`
-  - 2017 and before lumped together, afterwards, by year 
-    - variable charter gives type of institution
+#### Avery dataset
+- [Avery](https://sites.google.com/site/neilbhutta/data)
+- HMDA ID matched to FRB's NIC system, FFIEC or TFR Call Reports for each year , also matched to HUD's list of manufactured home and subprime lenders (1993-2005). and FFIEC's list of CRA wholesale and limited purpose institutions , check `hmdadoc2017.pdf`
+- 2017 and before lumped together, afterwards, by year 
+- variable charter gives type of institution
 
 
 ### hmdacll
