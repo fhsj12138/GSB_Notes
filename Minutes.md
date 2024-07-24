@@ -26,7 +26,7 @@ Read
 - moore firesales macroeconomic implication after shock to collateral
 - [Schleifer and Vishny, Firesales in Finance and Macroeconomics](https://scholar.harvard.edu/files/shleifer/files/fire_sales_jep_final.pdf)
 - [Ramey and Shapiro Aerospace Plant Closing](https://www.jstor.org/stable/10.1086/322828?seq=1)
-- effy ben berman firesales in airlines data is available
+- [Bankruptcy and the Collateral Channel](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.2010.01636.x)
 - [Failure of models that predict failure](https://www.sciencedirect.com/science/article/pii/S0304405X14002098) 
 
 # 24 July: Prof Vig 
@@ -39,3 +39,10 @@ Feedback
 - data mentioned in the shipping paper, any part of incompletion
 - macroeconomic implications
 - check the papers mentioned by prof seru
+
+- contracts, property rights, flags
+- lloyds shipping law
+- Theoretical understanding:
+- role of flags, arrests, liabilities creditors and products
+- seniority, P&I clubs, 
+- advanced corporate valuation 
