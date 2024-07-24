@@ -17,7 +17,7 @@ Reflections:
 - Understand if there is a space for state intervention in areas where some stakeholders are not well protected
 - Read papers on decentralisation and power control, insurance etc. View the seminars and literature. 
 
-#24 July: Prof Seru
+# 24 July: Prof Seru
 - Large direction
 - change in bank securitisation before and after financial crisis
 - intersection between macroeconomic policy and finance: exchange rate as an industrial policy; financial regulation is also very interesting. see what the economic implication is, financial or macroeconomic(fiscal/monetary) policy --> sector/bank response --> wider implication to the economy on output, productivity, innovation etc
