@@ -28,3 +28,14 @@ Read
 - [Ramey and Shapiro Aerospace Plant Closing](https://www.jstor.org/stable/10.1086/322828?seq=1)
 - effy ben berman firesales in airlines data is available
 - [Failure of models that predict failure](https://www.sciencedirect.com/science/article/pii/S0304405X14002098) 
+
+# 24 July: Prof Vig 
+- Read papers and also Shipping Law chapters:
+  - collision
+  - general average
+  - marine pollution
+Feedback
+- if focus is on firesales and bankruptcy, would be good to find sources specific to bankruptcy law in the shipping industry
+- data mentioned in the shipping paper, any part of incompletion
+- macroeconomic implications
+- check the papers mentioned by prof seru
