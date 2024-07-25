@@ -4,8 +4,6 @@
 2. model account for economic phenomena during the financial crisis
 3. how fire sale reduce investment and output
 4. government interventions in financial markets, eg Fed 2009
-- Literature:
-  - Pulvino 1998
-  - 
 
-
+Firesale in financial assets(vs real assets)
+- limited arbitrage: hedge funds/arbitragers experience capital withdrawals when performance is poor 
