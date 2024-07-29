@@ -58,11 +58,14 @@ Feedback
 - think about the mechanism
 - option prices to measure volatility
 1) Read Kelly paper
-2) Replicate and calculated implied options volatility and implied volatility difference gather data from option matrix, from stanford database; look at filters they imposed. Look at options with different windows, calls and puts, with different expiration dates. 30 at the money 
-3) Familiarise with (pref Longitude and latitude) data from ReferenceUS and Redivis, headquarter location measure is important, uncertainty (1994 onwards) SEC filing data
-4) Years ending in 2, new way district representation divided, focus on 2010-14, time period 2014, every 10 years redistricting with every census, Reference USA see if the timeline is long enough, also consider 2024.
-5) check if its balanced, clean etc.
-6) see the coverage for firms by year, all establishments, 
+2) Replicate and calculated implied options volatility and implied volatility difference gather data from option matrix, from stanford database;
+   - look at filters they imposed and their justifications.
+   - look at options with different windows, calls and puts, with different expiration dates. 
+3) Familiarise with (pref Longitude and latitude) data from Reference USA and Redivis, headquarter location measure, check data quality for firms by year, preferably look at all establishments
+5) Check Reference USA for duration of data covered, focus on 2010-14 but also check if 2020-24 data is avaliable  
+6) Years ending in 2, new way district representation divided, focus on 2010-14, time period 2014, every 10 years redistricting with every census, Reference USA see if the timeline is long enough, also consider 2024.
+7) check if its balanced, clean etc.
+8) see the coverage for firms by year, all establishments, 
 - understand how stable the results are and treatment definition
 - gather option data, option matrix
 - list of firms firmknows, date ranges
