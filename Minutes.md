@@ -45,4 +45,25 @@ Feedback
 - Theoretical understanding:
 - role of flags, arrests, liabilities creditors and products
 - seniority, P&I clubs, 
-- advanced corporate valuation 
+- advanced corporate valuation
+
+# 29 July: Prof Vig
+- Database:
+- politican may or may not run,
+- Senate and House of representatives 9 years average length
+- Read misallocation Hsieh & Peet Klenow, Misallocation, India/China/US, TFP differences
+- Data handover
+- kelly et al, volatility effect
+- redistribution effect through option prices, firms cut down investment
+- think about the mechanism
+- option prices to measure volatility
+1) Read Kelly paper
+2) Replicate and calculated implied options volatility and implied volatility difference gather data from option matrix, from stanford database; look at filters they imposed. Look at options with different windows, calls and puts, with different expiration dates. 30 at the money 
+3) Familiarise with (pref Longitude and latitude) data from ReferenceUS and Redivis, headquarter location measure is important, uncertainty (1994 onwards) SEC filing data
+4) Years ending in 2, new way district representation divided, focus on 2010-14, time period 2014, every 10 years redistricting with every census, Reference USA see if the timeline is long enough, also consider 2024.
+5) check if its balanced, clean etc.
+6) see the coverage for firms by year, all establishments, 
+- understand how stable the results are and treatment definition
+- gather option data, option matrix
+- list of firms firmknows, date ranges
+
