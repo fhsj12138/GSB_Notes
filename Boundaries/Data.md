@@ -16,3 +16,26 @@ ReferenceUSA (now known as Data Axle Reference Solutions) is a comprehensive dat
 #### Customizable Searches:
 - Advanced Search Features: Users can perform highly customized searches using various criteria, such as geography, industry, business size, sales volume, and demographics.
 - Exporting Data: Ability to export search results into various formats for further analysis and use.
+
+## CRSP Dataset
+historical data on U.S. financial markets, enabling detailed analysis of market behavior, asset pricing, investment strategies, and more.
+
+### Key Features and Components
+#### Stock Data:
+- Daily and Monthly Stock Prices: Historical data on stock prices, trading volumes, and returns for all U.S. exchange-listed stocks.
+- Corporate Actions: Information on stock splits, dividends, mergers, and other corporate actions.
+- Identifiers: Unique identifiers for securities, such as PERMNO and PERMCO, which facilitate longitudinal studies and data consistency.
+#### Index Data:
+- Market Indices: Historical data on major U.S. stock market indices, including the S&P 500, NASDAQ, and others.
+- Index Returns: Daily, monthly, and annual returns data for market indices, facilitating market-wide analysis.
+#### Mutual Fund Data:
+- Fund Performance: Detailed historical performance data for mutual funds, including returns, NAVs (Net Asset Values), and expense ratios.
+- Fund Attributes: Information on fund attributes such as investment objectives, management companies, and fund inception dates.
+#### Treasury and Bond Data:
+- Treasury Securities: Historical data on U.S. Treasury securities, including bills, notes, and bonds.
+- Bond Prices and Yields: Data on corporate bond prices, yields, and other bond-related metrics.
+#### Survivorship-Bias-Free Data:
+- Inclusion of Delisted Securities: CRSP includes data on securities that have been delisted, providing a more accurate historical record and avoiding survivorship bias.
+#### Cross-Sectional and Time-Series Data:
+Comprehensive Coverage: Data spans several decades, providing both cross-sectional and time-series datasets suitable for a wide range of research applications.
+
