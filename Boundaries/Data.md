@@ -39,3 +39,6 @@ historical data on U.S. financial markets, enabling detailed analysis of market 
 #### Cross-Sectional and Time-Series Data:
 Comprehensive Coverage: Data spans several decades, providing both cross-sectional and time-series datasets suitable for a wide range of research applications.
 
+## ArcGIS 
+Geographic information system (GIS) developed by Esri that enables users to create, manage, analyze, and visualize spatial data. 
+Used across various industries for mapping and spatial analysis, providing tools and capabilities for working with geographic data in both 2D and 3D environments.
