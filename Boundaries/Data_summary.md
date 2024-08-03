@@ -1,4 +1,5 @@
 ## OptionMetrics
+IvyDB contains historical data for all US listed equities(only looked at). 1996-present. 
 Compared IV values for option secid 110627 in year 2012 between different files to match data used in permno_match_implied_vol_update_v13
 ### Std_Option_Price File
 - Information on standardized/interpolated options(standardised option only included if there is enough option price data on that date to interpolate values with)
@@ -12,8 +13,11 @@ Compared IV values for option secid 110627 in year 2012 between different files 
 - Interpolated volatility surface for each security each day methodology based on kernel smoothing algorithm.
 - Implied volatility surface is function of how IV varies with call-equivalent delta(moneyness) and days to expiration.
 - Standardized options, calls and puts, expirations 10, .., 730 days, various deltas at 0.05 increments, positive(call), negative(put)
-
+### Option_Price
+- Each security that is traded, the implied volatility is (not standardised by days to expiration and moneyness), calculated either with Black-Scholes for European Options or Cox-Ross-Rubinstein (CRR) for American Options. 
+### Conclusion
+- Use data from Std_Option_Price
 ### Questions 
-- Any more description about the data used in permno_iv? 
+- Method to account for the discrepency between std_option_price and permno_iv? 
 
   
