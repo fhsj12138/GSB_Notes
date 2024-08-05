@@ -17,11 +17,22 @@ Compared IV values for option secid 110627 in year 2012 between different files 
 - 71,808 obs for 110627 in year 2012, incremented moneyness and expiration in Kernel distribution
 ### Option_Price
 - Each security that is traded, the implied volatility is (not standardised by days to expiration and moneyness), calculated either with Black-Scholes for European Options or Cox-Ross-Rubinstein (CRR) for American Options.
-- 78,406 obs for 110627 in year 2012 as it lists all options, not simplified to certain increments of expiration and moneyness. 
+- 78,406 obs for 110627 in year 2012 as it lists all options, not simplified to certain increments of expiration and moneyness.
+### Option_Sig
+- From WRDS Option Suite, CRSP Common Stock Space or Entire OptionMetrics Universe, two files, US option level output and stock level output
+- use options file as includes time to expiration filter
+- use only common stock space as only includes options of individual firm stocks not derivatives 
+- one observation each day for each security, firm, sort by the moneyness, variables are IV_CATM(IV for _near the money_ call option) and NOPT_CATM(number of options used to get the _near the money_ call IV), not broken down by number of days to maturity
+  - averaged across  
 ### Conclusion
 - Use data from Std_Option_Price
 - Note non of the data files have quantity data, our regression does not use quantity data or any form of aggregation. 
 ### Questions 
-- Method to account for the discrepency between std_option_price and permno_iv? 
+- Method to account for the discrepency between std_option_price and permno_iv?
+### Factors/filters 
+- If use option_sig:
+  - At the money, moneyness range? defined as near the money 0.95-1.05(currently)?
+  - weight by open interest? (represents number of outstanding contracts for an option, liquidity, more weight to options with higher market participation, reducing impact of outliers.
+  - ?(check if matters) number of days used to calculate historical volatility, now use 10
 
   
