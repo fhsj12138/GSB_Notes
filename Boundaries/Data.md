@@ -49,4 +49,7 @@ Used across various industries for mapping and spatial analysis, providing tools
   - ITM: for call, when current price of underlying asset (S) is above strike price(K); delta > 0.5; for put, S < K, delta < - 0.5 
   - ATM: S = K; for call delta ~ 0.5, for put, delta ~ -0.5
   - OTM: S < K; for call 0 < delta < 0.5, for put -0.5 < delta < 0
+### Moneyness 
+- $(K/S -1) x 100%$
+- in option_sig, seemed to have calculated as K/S
 
