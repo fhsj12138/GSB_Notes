@@ -42,3 +42,11 @@ Comprehensive Coverage: Data spans several decades, providing both cross-section
 ## ArcGIS 
 Geographic information system (GIS) developed by Esri that enables users to create, manage, analyze, and visualize spatial data. 
 Used across various industries for mapping and spatial analysis, providing tools and capabilities for working with geographic data in both 2D and 3D environments.
+
+# Variables 
+### Delta
+- interpretation: approximation of the probability that the option will end up ITM at expiration
+  - ITM: for call, when current price of underlying asset (S) is above strike price(K); delta > 0.5; for put, S < K, delta < - 0.5 
+  - ATM: S = K; for call delta ~ 0.5, for put, delta ~ -0.5
+  - OTM: S < K; for call 0 < delta < 0.5, for put -0.5 < delta < 0
+
