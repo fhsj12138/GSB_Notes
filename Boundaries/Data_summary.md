@@ -24,9 +24,9 @@ Compared IV values for option secid 110627 in year 2012 between different files 
 ### Option_Sig
 - From WRDS Option Suite, CRSP Common Stock Space or Entire OptionMetrics Universe, two files, US option level output and stock level output
 - use options file as includes time to expiration filter
-- use only common stock space as only includes options of individual firm stocks not derivatives 
-- one observation each day for each security, firm, sort by the moneyness, variables are IV_CATM(IV for _near the money_ call option) and NOPT_CATM(number of options used to get the _near the money_ call IV), not broken down by number of days to maturity
-  - averaged across  
+- use only common stock space as only includes options of individual firm stocks not derivatives
+- can select days to maturity etc, but data is very incomplete, skip days for 30 day maturity  
+- stock level data: one observation each day for each security, firm, sort by the moneyness, variables are IV_CATM(IV for _near the money_ call option) and NOPT_CATM(number of options used to get the _near the money_ call IV)
 ### Conclusion
 - Use data from Std_Option_Price
 - Note non of the data files have quantity data, our regression does not use quantity data or any form of aggregation. 
