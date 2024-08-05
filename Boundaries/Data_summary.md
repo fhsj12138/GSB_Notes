@@ -38,9 +38,12 @@ Compared IV values for option secid 110627 in year 2012 between different files 
   - weight by open interest? (represents number of outstanding contracts for an option, liquidity, more weight to options with higher market participation, reducing impact of outliers.
   - ?(check if matters) number of days used to calculate historical volatility, now use 10
 - If use standardised, then did we implicitly use 0.95-1.05 as the moneyness for ATM? (cross check with option_sig option level data file)
-
+#### options_std put
 <img width="970" alt="std_v13_p_110627_2012" src="https://github.com/user-attachments/assets/9994c80c-f0e4-4ad2-b424-a4cbd8f5a46f">
+#### options_std call
 <img width="970" alt="std_v13_c_110627_2012" src="https://github.com/user-attachments/assets/8dabf4d3-88b9-4cbb-99ac-18a1b6aa435b">
+#### options_sig put
 <img width="970" alt="sig_v13_p_110627_2012" src="https://github.com/user-attachments/assets/7a0a7ae3-84c2-4389-8509-1ca2a8b37bfe">
+#### options_sig call
 <img width="970" alt="sig_v13_c_110627_2012" src="https://github.com/user-attachments/assets/f51e5d7f-acf6-41af-834c-0c5ddfa132b0">
 
