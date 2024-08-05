@@ -39,8 +39,8 @@ Compared IV values for option secid 110627 in year 2012 between different files 
   - ?(check if matters) number of days used to calculate historical volatility, now use 10
 - If use standardised, then did we implicitly use 0.95-1.05 as the moneyness for ATM? (cross check with option_sig option level data file)
 
-![std_v13_p_110627_2012](https://github.com/user-attachments/assets/594323ed-cf10-44cb-950f-4e9ca08ff82d)
-![std_v13_c_110627_2012](https://github.com/user-attachments/assets/a43c8a09-e0ce-46fe-bd8e-de8ed4603a0d)
-![sig_v13_p_110627_2012](https://github.com/user-attachments/assets/f69b9c27-cdaf-4a98-aaba-e6135e46f81d)
-![sig_v13_c_110627_2012](https://github.com/user-attachments/assets/16bd0344-aff5-4e15-a5a2-c530b4895164)
 
+![std_v13_p_110627_2012](https://github.com/user-attachments/assets/8eab40bd-fda7-4f89-84f5-f123f35d1bd9)
+![std_v13_c_110627_2012](https://github.com/user-attachments/assets/06f672de-57a1-431d-9820-3d08f332a580)
+![sig_v13_p_110627_2012](https://github.com/user-attachments/assets/221f52d5-0005-4f96-be9c-1be1b935d3fb)
+![sig_v13_c_110627_2012](https://github.com/user-attachments/assets/43ed5d5e-ab1e-43b3-a447-be8349c54c00)
