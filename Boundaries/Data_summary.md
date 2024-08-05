@@ -4,7 +4,7 @@
 ## OptionMetrics
 IvyDB contains historical data for all US listed equities(only looked at). 1996-present. 
 Compared IV values for option secid 110627 in year 2012 between different files to match data used in permno_match_implied_vol_update_v13
-### Std_Option_Price File
+### Std_Option_Price File *
 - Information on standardized/interpolated options(standardised option only included if there is enough option price data on that date to interpolate values with)
 - At-the-money-forward options with expirations of 10,..., 730 days. 
 - Implied volatility is derived by linear interpolation from Volatility_Surface file.
@@ -21,7 +21,7 @@ Compared IV values for option secid 110627 in year 2012 between different files 
 ### Option_Price
 - Each security that is traded, the implied volatility is (not standardised by days to expiration and moneyness), calculated either with Black-Scholes for European Options or Cox-Ross-Rubinstein (CRR) for American Options.
 - 78,406 obs for 110627 in year 2012 as it lists all options, not simplified to certain increments of expiration and moneyness.
-### Option_Sig
+### Option_Sig *
 - From WRDS Option Suite, CRSP Common Stock Space or Entire OptionMetrics Universe, two files, US option level output and stock level output
 - use options file as includes time to expiration filter
 - use only common stock space as only includes options of individual firm stocks not derivatives
@@ -39,4 +39,8 @@ Compared IV values for option secid 110627 in year 2012 between different files 
   - ?(check if matters) number of days used to calculate historical volatility, now use 10
 - If use standardised, then did we implicitly use 0.95-1.05 as the moneyness for ATM? (cross check with option_sig option level data file)
 
-  
+![std_v13_p_110627_2012](https://github.com/user-attachments/assets/594323ed-cf10-44cb-950f-4e9ca08ff82d)
+![std_v13_c_110627_2012](https://github.com/user-attachments/assets/a43c8a09-e0ce-46fe-bd8e-de8ed4603a0d)
+![sig_v13_p_110627_2012](https://github.com/user-attachments/assets/f69b9c27-cdaf-4a98-aaba-e6135e46f81d)
+![sig_v13_c_110627_2012](https://github.com/user-attachments/assets/16bd0344-aff5-4e15-a5a2-c530b4895164)
+
