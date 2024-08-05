@@ -40,7 +40,8 @@ Compared IV values for option secid 110627 in year 2012 between different files 
 - If use standardised, then did we implicitly use 0.95-1.05 as the moneyness for ATM? (cross check with option_sig option level data file)
 
 
-![std_v13_p_110627_2012](Boundaries/sig_v13_c_110627_2012.gif)
-![std_v13_c_110627_2012](https://github.com/user-attachments/assets/06f672de-57a1-431d-9820-3d08f332a580)
-![sig_v13_p_110627_2012](https://github.com/user-attachments/assets/221f52d5-0005-4f96-be9c-1be1b935d3fb)
-![sig_v13_c_110627_2012](https://github.com/user-attachments/assets/43ed5d5e-ab1e-43b3-a447-be8349c54c00)
+
+![std_v13_p_110627_2012](https://github.com/user-attachments/assets/95cd4e56-a67b-4634-a3c6-4cd0e45e6724)
+![std_v13_c_110627_2012](https://github.com/user-attachments/assets/be88f942-990b-490e-b82e-b641e0f340fb)
+![sig_v13_p_110627_2012](https://github.com/user-attachments/assets/5889a3a5-ea2d-4d29-ac60-bec959b91f7d)
+![sig_v13_c_110627_2012](https://github.com/user-attachments/assets/bedd14e6-3c3d-4f0b-8a00-9371f4337f2b)
