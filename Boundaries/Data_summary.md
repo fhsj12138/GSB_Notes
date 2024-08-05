@@ -1,3 +1,6 @@
+## replicate v13
+- note data only until 2012 oct 31
+- use secid 110627 as example to test replication first
 ## OptionMetrics
 IvyDB contains historical data for all US listed equities(only looked at). 1996-present. 
 Compared IV values for option secid 110627 in year 2012 between different files to match data used in permno_match_implied_vol_update_v13
@@ -34,5 +37,6 @@ Compared IV values for option secid 110627 in year 2012 between different files 
   - At the money, moneyness range? defined as near the money 0.95-1.05(currently)?
   - weight by open interest? (represents number of outstanding contracts for an option, liquidity, more weight to options with higher market participation, reducing impact of outliers.
   - ?(check if matters) number of days used to calculate historical volatility, now use 10
+- If use standardised, then did we implicitly use 0.95-1.05 as the moneyness for ATM? (cross check with option_sig option level data file)
 
   
