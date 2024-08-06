@@ -1,7 +1,12 @@
-## replicate v13
-- note data only until 2012 oct 31
-- use secid 110627 as example to test replication first
-## OptionMetrics
+# Replicate v13
+- permno_v13
+    - date range:
+      - 01dec2000 - 27feb2004, with some dates missing obs
+      - 01dec2010 - 31oct2012, with some dates missing obs
+      - each day has 12,982 observations (presumably all the set of firms panel data) 
+      - 16,798,708 observations
+# WRDS
+## 1. OptionMetrics
 IvyDB contains historical data for all US listed equities(only looked at). 1996-present. 
 Compared IV values for option secid 110627 in year 2012 between different files to match data used in permno_match_implied_vol_update_v13
 ### Std_Option_Price File *
@@ -52,4 +57,23 @@ Compared IV values for option secid 110627 in year 2012 between different files 
 
 #### options_sig call
 <img width="970" alt="sig_v13_c_110627_2012" src="https://github.com/user-attachments/assets/f51e5d7f-acf6-41af-834c-0c5ddfa132b0">
+
+# Redivis
+## 1. Dun and Bradstreet Establishment v2.0 
+- D&B US business-to-business marketing information from 1969 - present, excluding 1981 and 1984
+- business inlcuded if have name and zipcode data (private and public)
+- no identifier, need to match name with secid or gvkey?
+- no latitiude longitude
+
+## 2. Reference USA v2.0 
+- Establishment-level US business from 2001-2022 
+  - 2001-2016: data not well-documented, no map between recent years 
+  - 2017-current 
+- both private and public companies
+- 1% sampled for 2m obs from 2001-2016 and 900k 2017-current
+- latitude and longitude data
+- no year of record data? (asked for dataguide, TBC)
+
+## US Zip to lat and long v1.1 
+- 43,191 obs, to check coverage by merging with one of above 
 
