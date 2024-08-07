@@ -45,7 +45,7 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 
 - For each firm
   1. Choose expiration date $a, b$ around $\tau$ :
-     - Let $x,y$ br the closest expiration date before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
+     - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
   2. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
   3. Find $IVD_{\tau}$
      - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ to eliminate noise by taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$
