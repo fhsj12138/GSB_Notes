@@ -72,7 +72,7 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 ### Redistricting Figure 4
 1. Options data in range $t \in [-30, 30]$ days, standardized ATM options with 30 day maturity from OptionMetrics.
 2. Separate firms into $A$ those located in states where maps are released(?not just the subset of firms affected by the boundaries) and $B$ those in states where maps have _yet to_ be released.
-3. Find averaged IV across all firms in $A, B$ respectively at each time point, $IV_{A, t}$ $IV_{B, t}$
+3. Find averaged IV _across all firms_ in $A, B$ respectively at each time point, $IV_{A, t}$ $IV_{B, t}$ _and across all events_ $\tau$ 
 4. Calculate the difference between $IV_{A, t}$ $IV_{B, t}$ (and 5-day moving average)
 
 ### Conclusion
@@ -82,4 +82,5 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 - Redistricting 2018 Table 3 regressed $IVD(Calls)$ and $IVD(Puts)$ on $Redistricting State$, calculated one $IVD(Calls)$ value for each firm. In step 3, average only across time range for each firm to give one $IVD_{\tau}$ for each event for each firm. Presumably, if a firm lives through multiple $\tau$, calculate $IVD = Mean_{\tau}(IVD_{\tau})$.
 
 ### Check
-- restrict data to firms with both control and treatment options. 
+- restrict data to firms with both control and treatment options.
+- is Fig 4 the best method to find the IV difference? Averaging across a lot of stuff. 
