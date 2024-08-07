@@ -1,7 +1,7 @@
 ### Kelly, 2016 IVD Calculations 
 - Let $IV_{t,m}$ denote the implied volatlity at time $t$ of an ATM option maturing at time $m>t$.
 - Implied volatility calculated by OptionMetrics (Kelly summarizes information in the pdf file, could be using either option_prices or another file).
-- Interested in options whose live span dates of political events, $\tau$, interest in $IV_{\tau, m}$ for $t< \tau < m$.
+- Interested in options whose live span dates of political events, $\tau$, interest in $IV_{t, m}$ for $t< \tau < m$.
 - Equity options expire on a regular monthly grid, in the US, expiration date is the Saturday that follows the third Friday of each month.
 - Find the location of each political event $\tau$ relative to the grid.
 - Lable expiration dates, one before and one after $\tau$, as $a, b$, such that $a < \tau < b$.
