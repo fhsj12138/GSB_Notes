@@ -43,14 +43,13 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 - Calculate one $IVD_{\tau}$ for each $\tau$ for each firm 
 <img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
 
-- For each firm
-  1. Choose expiration date $a, b$ around $\tau$ :
+  1. For each firm, choose expiration date $a, b$ around $\tau$ :
      - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
   2. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
   3. Find $IVD_{\tau}$
-     - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest
-     - Define $\bar{IV_a} = Mean(IV_{a-s,a}: s \in [b - \tau + 1, b - \tau + 20])$
-     - Define $\bar{IV_c} = Mean(IV_{c-s,c}: s \in [b - \tau + 1, b - \tau + 20])$
+     - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest _across all firms_
+     - Define $\bar{IV_a} = Mean(IV_{a-s,a}: s \in [b - \tau + 1, b - \tau + 20])$ similarly
+     - Define $\bar{IV_c} = Mean(IV_{c-s,c}: s \in [b - \tau + 1, b - \tau + 20])$ similarly
      - Define $IVD_{\tau} = \bar{IV_b} - {1 \over 2} (\bar{IV_a} + \bar{IV_c})$
 
 - $IVD_{\tau}$ is the difference between mean implied volatility of options that live through political event $\tau$ and the average of mean implied volatility of options that live and expire immediately before and after the political event. 
