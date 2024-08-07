@@ -53,4 +53,5 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
      - Define $IVD_{\tau} = \bar{IV_b} - {1 \over 2} (\bar{IV_a} + \bar{IV_c})$
 
 - $IVD_{\tau}$ is the difference between mean implied volatility of options that live through political event $\tau$ and the average of mean implied volatility of options that live and expire immediately before and after the political event. 
-
+- Kelly's method gives one $IVD_{\tau}$ for each event, averaged across all firms with both treatment and control options. We can then calculate the average of $IVD_{\tau}$ to give a mean IVD across all political events.
+- Redistricting 2018 regressed $IVD(Calls)$ and $IVD(Puts)$ on $Redistricting State$, calculated one $IVD(Calls)$ value for each firm. In step 3, instead of averaging across all firms, average only across date. 
