@@ -37,21 +37,36 @@ $^1$ Liquidity ATM> OTM > ITM. ATM's are most sensitive to small changs in the p
 
 $^2$ total number of outstanding contracts not settled or closed to ensure it is actively traded and gives reliable price data
 
-### Steps for IVD Calculation
+### Kelly steps for IVD Calculation
 - For each firm, look at daily price data for multiple 30-day maturity options, IV on 30-day maturities more accurate than 10, more responsive than longer duration maturities.
 - Around 2 months flag time
 - Calculate one $IVD_{\tau}$ for each $\tau$ for each firm 
 <img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
 
-  1. For each firm, choose expiration date $a, b$ around $\tau$ :
+  1. For each event, choose expiration date $a, b$ around $\tau$ :
      - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
   2. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
-  3. For each firm and $\tau$, find $IVD_{\tau}$ 
-     - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest _across each firm(Kelly: all weak and strong countries, and then separately)_
+  3. For each event, find $IVD_{\tau}$ 
+     - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest (Kelly: all weak and strong countries, and then separately)_
      - Define $\bar{IV_a} = Mean(IV_{a-s,a}: s \in [b - \tau + 1, b - \tau + 20])$ similarly
      - Define $\bar{IV_c} = Mean(IV_{c-s,c}: s \in [b - \tau + 1, b - \tau + 20])$ similarly
      - Define $IVD_{\tau} = \bar{IV_b} - {1 \over 2} (\bar{IV_a} + \bar{IV_c})$
 
+### Redistricting steps for IVD Calculation
+- For each firm, look at daily price data for multiple 30-day maturity options, IV on 30-day maturities more accurate than 10, more responsive than longer duration maturities.
+- Around 2 months flag time
+- Calculate one $IVD_{\tau}$ for each $\tau$ for each firm 
+<img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
+
+  1. Separate data into Call and Put options 
+  2.  For each event, choose expiration date $a, b$ around $\tau$ :
+     - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
+  3. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
+  4. For each firm and event, find $IVD_{\tau}$ 
+     - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest _across each firm_
+     - Define $\bar{IV_a} = Mean(IV_{a-s,a}: s \in [b - \tau + 1, b - \tau + 20])$ similarly
+     - Define $\bar{IV_c} = Mean(IV_{c-s,c}: s \in [b - \tau + 1, b - \tau + 20])$ similarly
+     - Define $IVD_{\tau} = \bar{IV_b} - {1 \over 2} (\bar{IV_a} + \bar{IV_c})$
 - $IVD_{\tau}$ is the difference between mean implied volatility of options that live through political event $\tau$ and the average of mean implied volatility of options that live and expire immediately before and after the political event. 
 - Kelly's method gives two measures: 
   1. Average $IVD_{\tau}$ across all political events (and economy types), $IVD = Mean_{\tau}(IVD_{\tau})$
