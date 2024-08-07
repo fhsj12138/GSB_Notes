@@ -9,9 +9,9 @@
 - _Filter 2_: If this distance more than 5 days, choose $a, b$ that are one month apart. $b = a+1$ month. If $\tau$ is within 5 days of the nearest expiration date, choose $a, b$ two months apart so neither is within 5 day window.
   - Some uncertainty is just noise? could be resolved a few days before or after the event
   - Avoid using ultra-short-maturity options, never uses options with 6 or fewer days to maturity. Ultra-short maturity options have very small time premiums, and their IV are inaccurate due to high sensitivity to price nonsynchronicity and other measurement errors. Beber and Brandt (2006) also exclude options with less than a week to maturity 
-- Define $c$ as the expiration date immediately following $b$, so $b$ and $c$ are 1 moth apart.
+- Define $c$ as the expiration date immediately following $b$, so $b$ and $c$ are 1 month apart.
 - Interested in $IV_{b-s,b}$ where $b-s < \tau < b$
-- To create more robust $b-s < \tau < b$
+- To create more robust $IV_{b-s,b}$
    1. subtract average $IV$ of the same country's options with neighboring expiration dates by computing $IV_{b-s,b} - {1 \over 2}(IV_{a-s,a}+IV_{c-s,c})$. To adjust for cross-country difference in volatility, ie same as country fixed effects. Also eliminates slow-moving fixed-effect approach
    2. replace $IV_{a-s,a}, IV_{b-s,b}, IV_{c-s,c}$ for any given $s$ by averages of $IV$ values across multiple values of $s$ to reduce noise in the estimation.
 - For each political event $\tau$ define _implied volatility difference_, $IVD_{\tau}$ as
