@@ -70,7 +70,7 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 - $IVD_{\tau}$ is the difference between mean implied volatility of options that live through political event $\tau$ and the average of mean implied volatility of options that live and expire immediately before and after the political event.
 
 ### Redistricting Figure 4
-1. Options data in range $ t \in [-30, 30]$ days, standardized ATM options with 30 day maturity from OptionMetrics.
+1. Options data in range $t \in [-30, 30]$ days, standardized ATM options with 30 day maturity from OptionMetrics.
 2. Separate firms into $A$ those located in states where maps are released(?not just the subset of firms affected by the boundaries) and $B$ those in states where maps have _yet to_ be released.
 3. Find averaged IV across all firms in $A, B$ respectively at each time point, $IV_{A, t}$ $IV_{B, t}$
 4. Calculate the difference between $IV_{A, t}$ $IV_{B, t}$ (and 5-day moving average)
