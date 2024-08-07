@@ -72,7 +72,7 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 ### Redistricting Figure 4
 1. Options data in range $t \in [-30, 30]$ days, standardized ATM options with 30 day maturity from OptionMetrics.
 2. Separate firms into $A$ those located in states where maps are released(?not just the subset of firms affected by the boundaries) and $B$ those in states where maps have _yet to_ be released.
-3. Find averaged IV _across all firms_ in $A, B$ respectively at each time point, $IV_{A, t}$ $IV_{B, t}$ _and across all events_ $\tau$ 
+3. In $A, B$ respectively, find averaged IV _across all firms and across all events_ $\tau$ at each time point, $IV_{A, t}$ $IV_{B, t}$
 4. Calculate the difference between $IV_{A, t}$ $IV_{B, t}$ (and 5-day moving average)
 
 ### Conclusion
