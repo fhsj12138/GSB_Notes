@@ -23,8 +23,8 @@
   3. acceptable options have $s$ days until expiration where $s$ belongs to a given time window
      - Define $\bar{IV_b}$ as $\bar{IV_b}=Mean ( IV_{b-s,b}: b - s \in [\tau -20, \tau-1])$ which is the equal-weighted average of $IV_{b-s, b}$ across the values of $s$ for which $b-s$ is in the 20-trading-day window preceding time $\tau$.
      - Choose 20 trading days (about 1 month) to smooth out noisy day-to-day fluctuations in option prices.
-- Thus, $\bar{IV_{b-s,b}}$ is the average implied volatility across all ATM options with open interest that expire at time $b$ and whose values are computed in the month _before_ $\tau$.
-- Similarly for $\bar{IV_{a-s,a}}$, $\bar{IV_{c-s,c}}$, choose 20-day windows that end $b- \tau +1$ trading days before $a$ and $c$, respectively, such that the times to maturity for options entering into $\bar{IV_a}$, $\bar{IV_b}$, $\bar{IV_c}$ are fully comparable.
+- Thus, $\bar{IV_{b}}$ is the average implied volatility across all ATM options with open interest that expire at time $b$ and whose values are computed in the month _before_ $\tau$.
+- Similarly for $\bar{IV_{a}}$, $\bar{IV_{c}}$, choose 20-day windows that end $b- \tau +1$ trading days before $a$ and $c$, respectively, such that the times to maturity for options entering into $\bar{IV_a}$, $\bar{IV_b}$, $\bar{IV_c}$ are fully comparable.
 - A positive value of $IVD_{\tau}$ indicates options whose lives span time $\tau$ are more expensive on average than the neighboring options whose lives do not span $\tau$. 
 
 
