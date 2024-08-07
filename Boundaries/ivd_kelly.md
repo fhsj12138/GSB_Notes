@@ -1,4 +1,4 @@
-### Kelly IVD Calculations 
+### Kelly, 2016 IVD Calculations 
 - Let $IV_{t,m}$ denote the implied volatlity at time $t$ of an ATM option maturing at time $m>t$.
 - Implied volatility calculated by OptionMetrics (Kelly summarizes information in the pdf file, could be using either option_prices or another file).
 - Interested in options whose live span dates of political events, $\tau$, interest in $IV_{\tau, m}$ for $t< \tau < m$.
