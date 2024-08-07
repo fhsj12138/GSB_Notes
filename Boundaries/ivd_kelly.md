@@ -44,7 +44,7 @@ $^2$ total number of outstanding contracts not settled or closed to ensure it is
 <img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
 
 - For each firm
-  1. Choose expiration date around $\tau$ :
+  1. Choose expiration date $a, b$ around $\tau$ :
      - Let $x,y$ br the closest expiration date before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
   2. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
   3. Find $IVD_{\tau}$
