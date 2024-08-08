@@ -15,13 +15,13 @@
 
 ### Redistricting steps for IVD Calculation
 - For each firm, look at daily price data for multiple 30-day maturity options, IV on 30-day maturities more accurate than 10, more responsive than longer duration maturities.
-- Around 2 months flag time
+- Around 2 months effective data time range for each event
 - Calculate one $IVD_{\tau}$ for each $\tau$ for each firm 
 <img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
 
   1. Separate data into Call and Put options 
   2.  For each event, choose expiration date $a, b$ around $\tau$ :
-     - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
+     - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ where $a = x-1, b=y$ or $b = y + 1, a = x$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
   3. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
   4. For each firm and event, find $IVD_{\tau}$ 
      - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest _across each firm_
