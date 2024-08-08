@@ -1,6 +1,6 @@
 ### Kelly steps for IVD Calculation
 - For each country, look at daily price data for multiple 30-day maturity options, IV on 30-day maturities more accurate than 10, more responsive than longer duration maturities.
-- Around 2 months flag time
+- Around 2 months effective data time range for each event
 - Calculate one $IVD_{\tau}$ for each $\tau$ for each firm 
 <img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
 
