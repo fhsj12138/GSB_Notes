@@ -5,7 +5,7 @@
 <img width="1140" alt="Screenshot 2024-08-07 at 10 09 06 AM" src="https://github.com/user-attachments/assets/c78f7816-5bcc-440f-aa13-55cb77cbbce3">
 
   1. For each event, choose expiration date $a, b$ around $\tau$ :
-     - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
+     - Let $x,y$ br the closest expiration dates before and after $\tau$ respectively. If $|x- \tau| \geq 5$ _and_ $|y- \tau| \geq 5$, then $a = x$, $b=y$, and $b = a +1$. Else, then choose $b = a + 2$ where $a = x-1, b=y$ or $b = y + 1, a = x$ such that $|a - \tau| \geq 5$ and  $|b - \tau| \geq 5$
   2. Define $c$ as $c = b+1$ month, such that $c$ is the expiration immediately after $b$
   3. For each event, find $IVD_{\tau}$ 
      - Define $\bar{IV_b} = Mean(IV_{b-s,b}: b - s \in [\tau - 20, \tau - 1])$ taking average of IV's of _ATM only_ options with $0.4 < | \Delta | < 0.5$ and open positive interest (Kelly: all weak and strong countries, and then separately)_
