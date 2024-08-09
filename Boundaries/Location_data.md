@@ -13,3 +13,16 @@
 - In densely populated urban areas, a ZIP+4 code might cover an area as small as a single building or a city block, which could be around 100 to 300 meters on each side. In less densely populated suburban or rural areas, a ZIP+4 code might cover a larger area, potentially ranging from 300 meters up to 1,000 meters or more. ZIP+4 code might typically cover an area from about 100 to 1,000 meters.
 - 94% obs have zip+4
 - DUNSNO uniquely identifies company
+
+## Conclusion
+- Potential approaches
+  1) use ReferenceUSA for all
+     - Pros: 6 decimal lat long
+     - Cons: data cleaning and merge two different sets of data. 2000-2016 data may be incomplete. need to check discrepencies between certain long lat data; crosswalk with 2020-2023 file to see if ABI links; check inconsistencies in company name and ABI for 2000-2016
+  2) use RefernceUSA for 2020-2023, and D&B for 2000-2016
+     - Pros: very complete firms zip +4 from 2000
+     - Cons: need to merge between two datasets by firm name to crosswalk and long lat 
+  3) use D&B for 2000-2016
+     - Pros: very complete firms zip +4 from 2000, 
+     - Cons: need to convert to long lat 
+     
