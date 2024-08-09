@@ -36,3 +36,15 @@ If a company changes its ticker symbol or CUSIP, CRSP might assign a new SECID t
 A company might have multiple share classes (e.g., Class A and Class B shares). Each share class might have a different SECID, but they could be associated with the same PERMNO if they represent the same underlying company.
 Summary:
 While PERMNO is a permanent and unique identifier that consistently tracks a company over time, SECID can change in response to corporate actions or structural changes in the security. Therefore, it’s possible for multiple SECIDs to be associated with the same PERMNO when different aspects or changes of a single underlying security or company are being tracked.
+
+The same SECID generally should not represent different PERMNO values
+
+1. Data Errors:
+Inconsistent Data Entries: In rare cases, due to data processing errors, a SECID might be incorrectly associated with different PERMNOs. These errors are typically corrected in database updates, but discrepancies could occur in historical snapshots or in datasets that haven't been properly maintained.
+2. Corporate Reorganization or Recapitalization:
+Complex Corporate Actions: In very complex corporate actions like a recapitalization or restructuring, it’s theoretically possible for a SECID to be reassigned from one security to another if the original security no longer exists in its previous form. However, this is more of an exception than a rule.
+3. Special Cases in Data Merging:
+Merging Data from Multiple Sources: When merging data from different sources (e.g., CRSP with another financial database), a SECID might appear to be linked to different PERMNOs if the merging logic is not handled correctly, leading to conflicts in the identifiers.
+4. Historical Reassignment:
+Rare Reassignments: In some very rare instances, historical data practices might have reassigned SECID to a different PERMNO after a security was delisted and a new, unrelated security took its place, though this would typically be avoided in modern datasets.
+
