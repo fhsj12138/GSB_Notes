@@ -1,14 +1,12 @@
 ## Conclusion
-- Potential approaches
-  1) use ReferenceUSA for all
-     - Pros: 6 decimal lat long
-     - Cons: data cleaning and merge two different sets of data. 2000-2016 data may be incomplete. need to check discrepencies between certain long lat data; crosswalk with 2020-2023 file to see if ABI links; check inconsistencies in company name and ABI for 2000-2016
-  2) use RefernceUSA for 2020-2023, and D&B for 2000-2016
-     - Pros: very complete firms zip +4 from 2000
-     - Cons: need to merge between two datasets by firm name to crosswalk and long lat 
-  3) use D&B for 2000-2016
-     - Pros: very complete firms zip +4 from 2000, 
-     - Cons: need to convert to long lat 
+- use ReferenceUSA for all (2000-03, 2010-13, 2020-23)
+  - Pros: 6 decimal lat long
+  - Cons: 2000-03 and 2010-13 total 13m 2020-23 total 48m, much smaller than D&B. Need extensive data cleaning and merge two different sets of data. Need to check discrepancies between certain long lat data for same company and year; crosswalk with 2020-2023 file to see if ABI links; check inconsistencies in company name and ABI for 2000-2016
+- use D&B for all (2000-03, 2010-13, 2020-23)
+  - Pros:  very complete firms zip +4 from 2000 (293m obs across time frame)
+  - Cons: not as precise, need to convert to long lat
+- use ReferenceUSA for 2020-2023, and D&B for 2000-03, 2010-13,
+  - Cons: need to merge between two datasets by firm name to crosswalk and may still prefer long lat as 5+4 digits zip is not as precise as 6 decimal lat long
 - No direct linkage from ABI(ReferenceUSA) and DUNSNO(D&B) to GVKEY, may need to use LLM to match by company names.
 - Check Compustat database if there is zip+4 (not just zip)
 
