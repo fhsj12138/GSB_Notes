@@ -70,3 +70,13 @@ Feedback
 - gather option data, option matrix
 - list of firms firmknows, date ranges
 
+# 13 Aug: Matt and Raymond
+- Paper on Senator's death, correspondance Boeing's operations and redistricting; have rationale of using establishments, also okay with just looking at headquarters
+- Optionmetrics: binscatter of new and old data 
+- Negative IV value is relative to -30 day
+- level effect and moment effect, some network effect, not redistricted, then IV
+  - what is the definition of "effect" when is day 0, do people already know when the boundaries be drawn, (but how do people know?)
+  - question of t-30 day anchoring, as something to note, but not go all the way back
+- treated defined as redistricting or network effect in IV or returns regressions
+- consider: same politician same district; same politician diff district; diff politician same distrinct; diff politican diff district
+- running in the area of greatest overlap? 
