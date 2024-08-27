@@ -66,6 +66,9 @@
 - For each political event $\tau$ define _implied volatility difference_, $IVD_{\tau}$ as
   $IVD_{\tau} = \bar{IV}_b - {1 \over 2} (\bar{IV_a} +\bar{IV_c})$
   where $\bar{IV_i}$ $i=a,b,c$  are square roots of averages of implied variances computed across all acceptable put and call options expiring at times $a, b, c$ respectively
+- Note there are 2 definitions of $\bar{IV_i}$ . IV measures price risk, Variance risk premium measures variance risk, where VRP equals implied variance minus expected furture variance.
+  $VRP_{b-s,b} = IV^2_{b-s,b} - RV^2_{b-s,b}$, implied variance is defined as _square of implied volatility_
+- To calculate implied variance, 
 - _Filter 3_: Criteria for acceptable options
   1. ATM options, defined as with deltas $0.4 < |\Delta| < 0.5$ to obtain a liquid set of ATM options $^1$. If multiple options satisfy this ATM definition, all used in average.
   2. acceptable options have positive open interest $^2$. Excption US data prior to 1996, require positive volumn as pre-1996 data come from a different source (MDR).
