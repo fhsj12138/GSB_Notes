@@ -29,7 +29,7 @@ C is price of call option, P price of put option, S current underlying security 
 
   $$S^{down}_{i+1} = S_i d \equiv S_i exp(-\sigma \sqrt{h})$$
 
-  where $h \equiv T\N$ is the size of the sub-period, and $S_i$ is the security price at the beginning of the sub-period
+  where $h \equiv T/N$ is the size of the sub-period, and $S_i$ is the security price at the beginning of the sub-period
 
 - Price of a call option at the begining of each sub-period is dependent on its price at the end of the sub-period, given by
   $$ C_i = max ( (pC^{up}_{i+1} + (1-p) C^{down} _{i+1} ) /R , S_i - K) $$
