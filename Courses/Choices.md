@@ -10,6 +10,9 @@
 - 
 
 ### Course list 
+- MATH 115: Functions of a Real Variable
+The development of 1-dimensional real analysis (the logical framework for why calculus works): sequences and series, limits, continuous functions, derivatives, integrals. Basic point set topology. Includes introduction to proof-writing. Prerequisite: Math 51 or Math 56.
+Terms: Aut, Win, Spr | Units: 4 | UG Reqs: GER:DB-Math, WAY-FR
 - ECON 233: Advanced Macroeconomics I
 Topics in the theory and empirics of economic growth. For PhD-level students.
 Terms: Aut | Units: 2-5
